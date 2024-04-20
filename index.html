@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media.css">
+  
+    <script src="js/funcoes.js"></script>
+    <title>Página inicial</title>
+</head>
+<body>
+    <header>
+        <div class="container-lang">
+            <a id="br" href="index.html">
+                <img src="imagens/Brazil.png" alt="brail-icon" >
+            </a>     
+            <a id="eng" href="indexEnglish.html">
+                <img src="imagens/USA.png" alt="brail-icon">
+            </a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+            <a href="#">FAQ</a>
+            <a href="#">INSCRIÇÃO</a>
+            <a href="#">AGENDA</a>
+            </div>
+          </div>
+          
+        <div class="container-link">
+            <a href="#">FAQ</a>
+            <a href="#">agenda</a>
+            <a href="#">inscrição</a>
+        </div>
+    </header>
+    <section>
+        <article id="inicio">
+            <div>
+                <h1>A tecnologia move o mundo</h1>
+                <p> Bem-vindo ao TechConnect, onde a tecnologia encontra a inovação! Junte-se a nós para uma experiência única de aprendizado, networking e inspiração. Nossa conferência reúne os líderes mais influentes da indústria para discutir as tendências mais recentes em tecnologia, inovação e empreendedorismo. Não  perca a oportunidade de se conectar com os melhores e mais brilhantes mentes do setor!</p>
+            </div>
+            <img src="imagens/Evento.jpg" alt="imagem-principal">
+        </article>
+        <article id="prof">
+            <h1>Profissionais</h1>
+            <div class="container-card">
+                <img src="imagens/DrMaria.jpg" alt="perfil">
+                <div class="container-desc">
+                    <h2>Dr. Maria Silva</h2>
+                    <p> Dr. Maria Silva é uma renomada cientista e empreendedora no campo da inteligência artificial. Com vasta experiência em pesquisa e desenvolvimento de tecnologias inovadoras, ela liderou várias iniciativas de sucesso que revolucionaram o setor. 
+                    </p>
+                </div>
+            </div>
+            <div class="container-card">
+                <img src="imagens/John Carter.jpg" alt="perfil">
+                <div class="container-desc">
+                    <h2>John Carter</h2>
+                    <p> John Carter é um especialista em liderança e gestão de equipes na era digital. Com uma carreira sólida em empresas de tecnologia de ponta, ele é conhecido por sua abordagem inovadora e inspiradora para desenvolver equipes de alta performance.
+                    </p>
+                </div>
+            </div>
+            <div class="container-card">
+                <img src="imagens/Sarah Johnson.jpg" alt="perfil">
+                <div class="container-desc">
+                    <h2>Sarah Johnson</h2>
+                    <p> Sarah Johnson é uma designer de experiência do usuário reconhecida internacionalmente por sua abordagem centrada no usuário e sua paixão por criar experiências digitais excepcionais. Com um portfólio impressionante de projetos premiados, ela é uma líder de pensamento no campo do design de UX/UI
+                </div>.  
+                </p>
+            </div>
+        </article>
+        <article class="detalhes">
+            <h1>O que você verá</h1>
+            <p>TechConnect oferece palestras inspiradoras de especialistas em tecnologia, workshops práticos, oportunidades de networking e insights sobre as últimas tendências e inovações do setor. Uma experiência imperdível para quem busca se manter atualizado e conectado no mundo da tecnologia.</p>
+            <div class="container-details">
+                <div class="detail">
+                    <h2>Palestras</h2>
+                </div>
+                <div class="detail">
+                    <h2>Worshops</h2>
+                </div>
+                <div class="detail">
+                    <h2>inovações</h2>
+                </div>
+            </div>
+        </article>
+        <article class="agenda">
+            <h1>Agenda</h1>
+            <div class="container-agenda">
+                <div class="data1">09/09 - cidade</div>
+                <div class="data2">09/09 - cidade</div>
+                <div class="data1">09/09 - cidade</div>
+                <div class="data2">09/09 - cidade</div>
+            </div>
+        </article>
+        <article class="form">
+            <div class="container-form">
+                <img src="imagens/form-img.jpg" alt="form-img">
+                <form action="">
+                    <p>A tecnologia está aqui!</p>
+                    <label for="txtNome">Nome:</label>
+                    <br/>
+                    <input type="text" name="txtNome" id="txtNome" required/>
+                    <br/>
+                    <label for="txtEmail">Email:</label>
+                    <br/>
+                    <input type="text" name="txtEmail" id="txtEmail" required/>
+                    <br/>
+                    <input type="submit" value="Inscrever-se" id="submit">
+                </form>
+            </div>  
+        </article>
+        <article class="FAQ">
+            <h1>FAQ</h1>
+            <div class="container-faq">
+                <button class="accordion"> Como faço para me inscrever no evento? <img src="imagens/+.png" alt="icon" id="img-acc"></button>
+                <div class="panel">
+                <p> Se você está interessado em participar do TechConnect, o processo de inscrição é simples e gratuito! Basta preencher o formulário de inscrição em nossa página principal e aguardar a confirmação por e-mail. Certifique-se de fornecer informações precisas para garantir sua vaga neste evento exclusivo de tecnologia e inovação.</p>
+                </div>
+
+                <button class="accordion">Haverá estacionamento disponível no local do evento? <img src="imagens/+.png" alt="icon" id="img-acc"></button>
+                <div class="panel">
+                <p>Para garantir uma experiência tranquila para todos os participantes, o TechConnect oferecerá estacionamento no local do evento. Nossa equipe estará disponível para orientá-lo sobre as opções de estacionamento disponíveis e fornecer informações adicionais, se necessário. Esteja pronto para chegar cedo e aproveitar ao máximo o evento!</p>
+                </div>
+
+                <button class="accordion">Posso cancelar minha inscrição após me registrar para o evento?
+                    <img src="imagens/+.png" alt="icon" id="img-acc"></button>
+                <div class="panel">
+                <p>Entendemos que planos podem mudar e imprevistos podem surgir. Se precisar cancelar sua inscrição no TechConnect, entre em contato conosco o mais breve possível. Embora as inscrições sejam gratuitas, agradecemos sua cooperação para nos ajudar a garantir que todos os lugares sejam utilizados da melhor forma possível. Estamos aqui para ajudá-lo com quaisquer solicitações ou dúvidas relacionadas ao cancelamento de inscrições.</p>
+                </div>
+
+                <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+                }
+                </script>
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>
