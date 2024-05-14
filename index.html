@@ -3,152 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/media.css">
-  
-    <script src="js/funcoes.js"></script>
-    <title>Página inicial</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
-        <div class="container-lang">
-            <a id="br" href="index.html">
-                <img src="imagens/Brazil.png" alt="brail-icon" >
-            </a>     
-            <a id="eng" href="indexEnglish.html">
-                <img src="imagens/USA.png" alt="brail-icon">
-            </a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn"></button>
-            <div class="dropdown-content">
-            <a href="#">FAQ</a>
-            <a href="#">INSCRIÇÃO</a>
-            <a href="#">AGENDA</a>
+        <nav class="nav-mobile">
+            <img src="imagens/menu.png" alt="menu icon" onclick="openNav()">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="imagens/close.png" alt="fechar icon"></a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
             </div>
-          </div>
-          
-        <div class="container-link">
-            <a href="#">FAQ</a>
-            <a href="#">agenda</a>
-            <a href="#">inscrição</a>
-        </div>
+        </nav>
     </header>
     <section>
-        <article id="inicio">
-            <div>
-                <h1>A tecnologia move o mundo</h1>
-                <p> Bem-vindo ao TechConnect, onde a tecnologia encontra a inovação! Junte-se a nós para uma experiência única de aprendizado, networking e inspiração. Nossa conferência reúne os líderes mais influentes da indústria para discutir as tendências mais recentes em tecnologia, inovação e empreendedorismo. Não  perca a oportunidade de se conectar com os melhores e mais brilhantes mentes do setor!</p>
+        <article class="inicio">
+            <div class="container-txt">
+                <p>ADVOGADO</p>
+                <h1>Dr. Gabriel Nunes</h1>
+                <button>Entrar em contato</button>
             </div>
-            <img src="imagens/Evento.jpg" alt="imagem-principal">
+            <img src="imagens/foto.png" alt="foto-perfil">
         </article>
-        <article id="prof">
-            <h1>Profissionais</h1>
-            <div class="container-card">
-                <img src="imagens/DrMaria.jpg" alt="perfil">
-                <div class="container-desc">
-                    <h2>Dr. Maria Silva</h2>
-                    <p> Dr. Maria Silva é uma renomada cientista e empreendedora no campo da inteligência artificial. Com vasta experiência em pesquisa e desenvolvimento de tecnologias inovadoras, ela liderou várias iniciativas de sucesso que revolucionaram o setor. 
+        <article class="sobre"> 
+            <h1>
+                Sobre mim
+            </h1>
+            <p>Dr. Gabriel Nunes é um advogado dedicado e experiente, comprometido em fornecer orientação jurídica de alta qualidade e representação eficaz para seus clientes. Com uma abordagem centrada no cliente e um profundo conhecimento das leis, ele busca sempre defender os interesses e direitos de seus clientes com integridade e comprometimento.</p>
+            <div class="sobre-faixa">
+                <img src="imagens/ilustracao.png" alt="ilustração">
+            </div>
+        </article>
+        <article class="servicos">
+            <div class="faixa"></div>
+            <h1>Áreas de atuação</h1>
+            <div class="container-areas">
+                <div class="card">
+                    <img src="imagens/banco.png" alt="icone-areas">
+                    <h1>Planejamento Patrimonial e Sucessório </h1>
+                    <p>ofereço orientação especializada na elaboração de testamentos, procurações duradouras, diretivas antecipadas de saúde e outros instrumentos legais relevantes para o planejamento sucessório.</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/Person.png" alt="icone-areas">
+                    <h1>Consultoria Jurídica </h1>
+                    <p>Sua consultoria abrange desde questões simples até casos complexos, garantindo que os clientes entendam seus direitos e obrigações legais em todas as circunstâncias.</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Disengagement.png" alt="icone-areas">
+                    <h1>Defesa Criminal </h1>
+                    <p>D efendo os direitos de seus clientes em casos que envolvem uma variedade de crimes, desde delitos menores até acusações mais graves, garantindo um processo legal justo e a melhor defesa possível em todas as etapas do processo criminal.</p>
+                </div>     
+            </div>
+  
+        </article>
+        <article class="processos">
+            <h1>Processos</h1>
+            <div class="container-slides" id="containerSlides">
+                <div class="slide foco">
+                    <img src="imagens/1st.png" alt="icone-areas">
+                    <h1>Consulta Inicial </h1>
+                    <p>
+                        Nesta etapa inicial, o cliente agenda uma consulta com o Dr. Gabriel Nunes para discutir seu caso específico. Durante esta consulta, o advogado ouve atentamente as preocupações e detalhes do cliente, avalia a viabilidade legal do caso e fornece orientação inicial sobre os próximos passos a serem tomados.
+                    </p>
+                </div>
+                <div class="slide ">
+                    <img src="imagens/Circled 2.png" alt="icone-areas">
+                    <h1>Consulta Inicial </h1>
+                    <p>
+                        Nesta etapa inicial, o cliente agenda uma consulta com o Dr. Gabriel Nunes para discutir seu caso específico. Durante esta consulta, o advogado ouve atentamente as preocupações e detalhes do cliente, avalia a viabilidade legal do caso e fornece orientação inicial sobre os próximos passos a serem tomados.
+                    </p>
+                </div>
+                <div class="slide">  <img src="imagens/Circled 3.png" alt="icone-areas">
+                    <h1>Consulta Inicial </h1>
+                    <p>
+                        Nesta etapa inicial, o cliente agenda uma consulta com o Dr. Gabriel Nunes para discutir seu caso específico. Durante esta consulta, o advogado ouve atentamente as preocupações e detalhes do cliente, avalia a viabilidade legal do caso e fornece orientação inicial sobre os próximos passos a serem tomados.
                     </p>
                 </div>
             </div>
-            <div class="container-card">
-                <img src="imagens/John Carter.jpg" alt="perfil">
-                <div class="container-desc">
-                    <h2>John Carter</h2>
-                    <p> John Carter é um especialista em liderança e gestão de equipes na era digital. Com uma carreira sólida em empresas de tecnologia de ponta, ele é conhecido por sua abordagem inovadora e inspiradora para desenvolver equipes de alta performance.
-                    </p>
-                </div>
+            <div class="container-btns">
+                <button id="prev"><</button>
+                <button class="btn-17" id="next">
+                    <span class="text-container">
+                      <span class="text">></span>
+                    </span>
+                  </button>
             </div>
-            <div class="container-card">
-                <img src="imagens/Sarah Johnson.jpg" alt="perfil">
-                <div class="container-desc">
-                    <h2>Sarah Johnson</h2>
-                    <p> Sarah Johnson é uma designer de experiência do usuário reconhecida internacionalmente por sua abordagem centrada no usuário e sua paixão por criar experiências digitais excepcionais. Com um portfólio impressionante de projetos premiados, ela é uma líder de pensamento no campo do design de UX/UI
-                </div>.  
-                </p>
-            </div>
-        </article>
-        <article class="detalhes">
-            <h1>O que você verá</h1>
-            <p>TechConnect oferece palestras inspiradoras de especialistas em tecnologia, workshops práticos, oportunidades de networking e insights sobre as últimas tendências e inovações do setor. Uma experiência imperdível para quem busca se manter atualizado e conectado no mundo da tecnologia.</p>
-            <div class="container-details">
-                <div class="detail">
-                    <h2>Palestras</h2>
-                </div>
-                <div class="detail">
-                    <h2>Worshops</h2>
-                </div>
-                <div class="detail">
-                    <h2>inovações</h2>
-                </div>
-            </div>
-        </article>
-        <article class="agenda">
-            <h1>Agenda</h1>
-            <div class="container-agenda">
-                <div class="data1">09/09 - cidade</div>
-                <div class="data2">09/09 - cidade</div>
-                <div class="data1">09/09 - cidade</div>
-                <div class="data2">09/09 - cidade</div>
-            </div>
-        </article>
-        <article class="form">
-            <div class="container-form">
-                <img src="imagens/form-img.jpg" alt="form-img">
-                <form action="">
-                    <p>A tecnologia está aqui!</p>
-                    <label for="txtNome">Nome:</label>
-                    <br/>
-                    <input type="text" name="txtNome" id="txtNome" required/>
-                    <br/>
-                    <label for="txtEmail">Email:</label>
-                    <br/>
-                    <input type="text" name="txtEmail" id="txtEmail" required/>
-                    <br/>
-                    <input type="submit" value="Inscrever-se" id="submit">
-                </form>
-            </div>  
-        </article>
-        <article class="FAQ">
-            <h1>FAQ</h1>
-            <div class="container-faq">
-                <button class="accordion"> Como faço para me inscrever no evento? <img src="imagens/+.png" alt="icon" id="img-acc"></button>
-                <div class="panel">
-                <p> Se você está interessado em participar do TechConnect, o processo de inscrição é simples e gratuito! Basta preencher o formulário de inscrição em nossa página principal e aguardar a confirmação por e-mail. Certifique-se de fornecer informações precisas para garantir sua vaga neste evento exclusivo de tecnologia e inovação.</p>
-                </div>
 
-                <button class="accordion">Haverá estacionamento disponível no local do evento? <img src="imagens/+.png" alt="icon" id="img-acc"></button>
-                <div class="panel">
-                <p>Para garantir uma experiência tranquila para todos os participantes, o TechConnect oferecerá estacionamento no local do evento. Nossa equipe estará disponível para orientá-lo sobre as opções de estacionamento disponíveis e fornecer informações adicionais, se necessário. Esteja pronto para chegar cedo e aproveitar ao máximo o evento!</p>
-                </div>
-
-                <button class="accordion">Posso cancelar minha inscrição após me registrar para o evento?
-                    <img src="imagens/+.png" alt="icon" id="img-acc"></button>
-                <div class="panel">
-                <p>Entendemos que planos podem mudar e imprevistos podem surgir. Se precisar cancelar sua inscrição no TechConnect, entre em contato conosco o mais breve possível. Embora as inscrições sejam gratuitas, agradecemos sua cooperação para nos ajudar a garantir que todos os lugares sejam utilizados da melhor forma possível. Estamos aqui para ajudá-lo com quaisquer solicitações ou dúvidas relacionadas ao cancelamento de inscrições.</p>
-                </div>
-
-                <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-
-                for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    } else {
-                    panel.style.display = "block";
-                    }
-                });
-                }
-                </script>
+            <script src="script/funcoes.js"></script>
+        </article>     
+        <article class="avaliacoes">
+            <h1>Avaliações</h1>
+            <div class="card">
+                <img src="imagens/images 1.png" alt="foto-avaliacao">
+                <h1>Pedro Costa</h1>
+                <p>Dr. Gabriel Nunes é o melhor advogado que já tive o prazer de conhecer. Ele não apenas obteve um resultado favorável em meu caso criminal, mas também me deu esperança e confiança quando eu mais precisava.</p>
             </div>
         </article>
     </section>
-    
+    <footer>
+        <a href="#"></a>
+        <a href="#"></a>
+    </footer>
 </body>
 </html>
