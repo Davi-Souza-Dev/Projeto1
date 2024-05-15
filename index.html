@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 <body>
     <header>
@@ -12,11 +13,15 @@
             <img src="imagens/menu.png" alt="menu icon" onclick="openNav()">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="imagens/close.png" alt="fechar icon"></a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a href="#sobre"onclick="closeNav()" >Sobre</a>
+                <a href="#servicos" onclick="closeNav()">Serviços</a>
+                <a href="#processos" onclick="closeNav()">Processos</a>
             </div>
+        </nav>
+        <nav class="nav-desktop">
+            <a href="#sobre"onclick="closeNav()" >Sobre</a>
+            <a href="#servicos" onclick="closeNav()">Serviços</a>
+            <a href="#processos" onclick="closeNav()">Processos</a>
         </nav>
     </header>
     <section>
@@ -28,15 +33,19 @@
             </div>
             <img src="imagens/foto.png" alt="foto-perfil">
         </article>
+        <a name="sobre"></a>
         <article class="sobre"> 
-            <h1>
-                Sobre mim
-            </h1>
-            <p>Dr. Gabriel Nunes é um advogado dedicado e experiente, comprometido em fornecer orientação jurídica de alta qualidade e representação eficaz para seus clientes. Com uma abordagem centrada no cliente e um profundo conhecimento das leis, ele busca sempre defender os interesses e direitos de seus clientes com integridade e comprometimento.</p>
+            <div class="container-txt">
+                <h1>
+                    Sobre mim
+                </h1>
+                <p>Dr. Gabriel Nunes é um advogado dedicado e experiente, comprometido em fornecer orientação jurídica de alta qualidade e representação eficaz para seus clientes. Com uma abordagem centrada no cliente e um profundo conhecimento das leis, ele busca sempre defender os interesses e direitos de seus clientes com integridade e comprometimento.</p>
+            </div>
             <div class="sobre-faixa">
                 <img src="imagens/ilustracao.png" alt="ilustração">
             </div>
         </article>
+        <a name="servicos"></a>
         <article class="servicos">
             <div class="faixa"></div>
             <h1>Áreas de atuação</h1>
@@ -60,6 +69,7 @@
             </div>
   
         </article>
+        <a name="processos"></a>
         <article class="processos">
             <h1>Processos</h1>
             <div class="container-slides" id="containerSlides">
@@ -71,16 +81,16 @@
                     </p>
                 </div>
                 <div class="slide ">
-                    <img src="imagens/Circled 2.png" alt="icone-areas">
-                    <h1>Consulta Inicial </h1>
+                    <img src="imagens/Circled 2.png" alt="icone-areas" id="alvo">
+                    <h1>Desenvolvimento e Implementação </h1>
                     <p>
-                        Nesta etapa inicial, o cliente agenda uma consulta com o Dr. Gabriel Nunes para discutir seu caso específico. Durante esta consulta, o advogado ouve atentamente as preocupações e detalhes do cliente, avalia a viabilidade legal do caso e fornece orientação inicial sobre os próximos passos a serem tomados.
+                        Com base na consulta inicial e na avaliação do caso, o Dr. Gabriel Nunes trabalha em estreita colaboração com o cliente para desenvolver uma estratégia legal personalizada e eficaz. Isso pode incluir pesquisa jurídica detalhada, coleta de evidências relevantes, preparação de documentos legais necessários e outras medidas necessárias para fortalecer a posição do cliente.
                     </p>
                 </div>
                 <div class="slide">  <img src="imagens/Circled 3.png" alt="icone-areas">
-                    <h1>Consulta Inicial </h1>
+                    <h1>Representação e Resolução do Caso </h1>
                     <p>
-                        Nesta etapa inicial, o cliente agenda uma consulta com o Dr. Gabriel Nunes para discutir seu caso específico. Durante esta consulta, o advogado ouve atentamente as preocupações e detalhes do cliente, avalia a viabilidade legal do caso e fornece orientação inicial sobre os próximos passos a serem tomados.
+                        Na fase final do processo, o Dr. Gabriel Nunes representa vigorosamente o cliente em negociações, audiências judiciais ou procedimentos legais, dependendo da natureza do caso. Ele trabalha incansavelmente para proteger os interesses e direitos do cliente, buscando alcançar o melhor resultado possível.
                     </p>
                 </div>
             </div>
@@ -94,7 +104,8 @@
             </div>
 
             <script src="script/funcoes.js"></script>
-        </article>     
+        </article>  
+        <a name="avaliacoes"></a>   
         <article class="avaliacoes">
             <h1>Avaliações</h1>
             <div class="card">
@@ -105,8 +116,8 @@
         </article>
     </section>
     <footer>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#" class="btnLink"><img src="imagens/whatsapp.png" alt="icone-contato"></a>
+        <a href="#" class="btnLink"><img src="imagens/instagram.png" alt="icone-contato"></a>
     </footer>
 </body>
 </html>
